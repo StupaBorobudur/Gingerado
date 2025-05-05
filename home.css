@@ -1,0 +1,217 @@
+body {
+    margin:0;
+    background-image:url("wave.jpg" );
+    animation: animate 10s linear infinite;
+    z-index:1000;
+    animation-delay:0s;
+    background-size:150%;
+    background-position-y:-230px;
+    height:500px;
+    
+  }
+
+  
+  header{
+    justify-content: space-between;
+    background-color: #0098fd;
+    display: flex;
+    height: 100px;
+    width:100%;
+    position:fixed;
+    z-index:1;
+  }
+
+  a{
+    text-decoration:none;
+    color:white;
+  }
+  .footer{
+    transform:translateY(1400px)translateX(20px);
+    background-color: #0089e4;
+    line-height:0.5;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: varela round;
+    color:#fff;
+  }
+
+  .sosmed{
+    scale:200%;
+    transform:translateX(-40px)translateY(13px);
+    z-index: 1;
+  }
+
+
+
+  .big{
+    transform:translateX(440px)translateY(-500px);
+    animation-duration:1s;
+    animation-name:slidein;
+    z-index:1;
+    scale:110%;
+  }
+  
+  .gbrlogo{
+    transform:translateX(-80px);
+  }
+  nav a {
+    float: left;
+      text-align: center;
+      padding: 25px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    font-family:'varela round';
+  }
+  nav a:hover {
+    background-color: rgb(44, 67, 145);transition:0.5s;scale:105%;box-shadow: 0px 0px 5px rgb(58, 7, 124);
+  }
+
+
+  .main {
+    line-height:0;
+    transform:translateY(-1680px)translateX(100px);
+    animation-duration:1s;
+    animation-name:slidein;
+    z-index:-2;
+    
+  }
+  @keyframes slidein {
+    from{
+        margin-left:100%;
+    }
+    to{
+        margin-left:0%;
+    }
+  }
+
+  .iklan{
+    transform:translateY(-11600px)translateX(-1850px);
+    display:flex;
+    scale:20%;
+    animation-duration:1s;
+    animation-name:slidein;
+    
+  }
+
+  .i {
+    transform:translateX(-200px);
+    border-radius:50px;
+    transition:0.5s;
+  }
+
+  .ii{
+    border-radius:50px;
+    transition:0.5s;
+  }
+  .iii {
+    transform:translateX(200px);
+    border-radius:50px;
+    transition:0.5s;
+  }
+
+  .i:hover, .ii:hover, .iii:hover{
+    scale:105%;
+    transition:0.5s;
+  }
+
+  .logo1{
+    height:60px;
+    color: white; 
+    font-family:rubik bubbles;
+    line-height:0;
+    transform:translateY(-20px);
+  }
+
+  .logo2{
+    color: white; 
+    font-family:rubik bubbles;
+    font-style:bold;
+    transform:translateY(-150px);
+  }
+
+  .birjahe{
+    position:relative;
+    margin-left:1000px;
+    top:-1660px;
+    left:-500px;
+  }
+  .container{
+    position:relative;
+    width:100%;
+    height : 100vh;
+    overflow:hidden;
+
+  }
+  .bubbles{
+    position :relative;
+    display:flex;
+
+  }
+  .bubbles span{
+    position:relative;
+    width : 30px;
+    height:30px;
+    background-color:rgb(178, 227, 255);
+    margin:0 4px;
+    border-radius:50%;
+    box-shadow:0 0 50px #d3f3ff, 0 0 100px #e1fd95 ;
+    animation:animation 15s linear infinite;
+    animation-duration:calc(130s/var(--i))
+
+  }
+  @keyframes animation{
+    0%
+    {
+        transform:translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform:translateY(-10vh) scale(1);
+    }
+  }
+
+  .text-wrapper {
+    position:relative;
+    top:-1710px;
+    display:flex;
+    justify-content:flex-start;
+    background: #0246da;
+    overflow: hidden;
+    color:#fff;
+    font-family:sofia;
+
+  }
+
+  .marq{
+    font-size :16px;
+    text-transform:uppercase;
+    -webkit-text-stroke-width:0.1px;
+    -webkit-text-stroke-color:#fff;
+    white-space:nowrap;
+    padding : 0 3rem;
+    letter-spacing:1px;
+    animation:move-rtl 6000ms linear infinite;
+
+  }
+
+  @keyframes move-rtl {
+    0%{
+        transform :translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+  }
+
+  
+  @keyframes animate{
+    0%{
+      background-position-x:0;
+    }
+
+    100%{
+      background-position-x:1000px;
+    }
+  }

@@ -1,0 +1,198 @@
+body {
+    margin:0 0 0 0;
+    background-image:url("cloud.jpg" );
+    background-repeat: repeat-y;
+    background-size: 100%;
+    max-height:500px;
+  }
+  header{
+    justify-content: space-between;
+    background-color: #0098fd;
+    display: flex;
+    position:fixed;
+    height: 100px;
+    z-index:1;
+    width:100%;
+  }
+  
+.footer{
+  position:relative;
+  top:600px;
+  background-color: #0089e4;
+  line-height:0.5;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family: varela round;
+  color:#fff;
+}
+
+  .sosmed{
+    scale:200%;
+    transform:translateX(-40px)translateY(13px);
+    z-index: 1;
+  }
+
+  .hii{
+    transform:translateY(10px)translateX(-50px);
+  }
+
+  
+  .hi{
+    transform:translateX(-50px)translateY(50px);
+  }
+
+  .slogan{
+    transform:translateY(90px);
+  }
+  .start{
+    font-size:40px;
+    display: block;
+    width:max-content;
+    padding-left:20px;      padding-right:20px;
+    background-color:#53a3ff;
+    color:aliceblue;
+    border-radius:15px;
+    transform:translateX(670px)translateY(-1870px);
+    font-family:rubik bubbles;
+    border-color: aliceblue;
+    border-width:5px;
+    border-style: double;
+      
+      }
+
+  a{
+    text-decoration: none;
+    color:#fff;
+  }
+      
+
+  .start:hover{
+    box-shadow:#015288;
+    background-color: #95bffd;
+    transition: 0.5s;
+  }
+
+  nav a {
+    float: left;
+      text-align: center;
+      padding: 25px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    font-family:'varela round';
+  }
+  nav a:hover {
+    background-color: rgb(44, 67, 145);transition:0.5s;scale:105%;box-shadow: 0px 0px 5px rgb(58, 7, 124);
+  }
+
+
+  .main {
+    position:relative;
+    margin-left: 100px;
+    line-height:0;
+    top:-600px;
+    animation-duration:1s;
+    animation-name:slidein;
+    
+  }
+  @keyframes slidein {
+    from{
+        margin-left:100%;
+    }
+    to{
+        margin-left:0%;
+    }
+  }
+  .logo1{
+    height:60px;
+    color: white; 
+    font-family:rubik bubbles;
+    line-height:0;
+    transform:translateY(-20px);
+  }
+  .logo2{
+    color: white; 
+    font-family:rubik bubbles;
+    font-style:bold;
+    transform:translateY(-150px);
+  }
+
+  .gbrlogo{
+    transform:translateX(-50px);
+  }
+
+  .birjahe{
+    position:relative;
+    margin-left:1000px;
+    top:-1640px;
+    left:-500px;
+  }
+  .container{
+    position:relative;
+    width:100%;
+    height : 100vh;
+    overflow:hidden;
+
+  }
+  .bubbles{
+    position :relative;
+    display:flex;
+
+  }
+  .bubbles span{
+    position:relative;
+    width : 30px;
+    height:30px;
+    background-color:rgb(158, 232, 255);
+    margin:0 4px;
+    border-radius:50%;
+    box-shadow: 0 0 0 3px #6bc1e9;
+    animation:animate 15s linear infinite;
+    animation-duration:calc(130s/var(--i))
+
+  }
+
+  @keyframes animate{
+    0%
+    {
+        transform:translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform:translateY(-10vh) scale(1);
+    }
+  }
+
+  .text-wrapper {
+    position:relative;
+    top:-1680px;
+    display:flex;
+    justify-content:flex-start;
+    background: #0089e4;
+    overflow: hidden;
+    color:#fff;
+    font-family:sofia;
+
+  }
+
+  .marq{
+    font-size :16px;
+    text-transform:uppercase;
+    -webkit-text-stroke-width:0.1px;
+    -webkit-text-stroke-color:#fff;
+    white-space:nowrap;
+    padding : 0 3rem;
+    letter-spacing:1px;
+    animation:move-rtl 6000ms linear infinite;
+
+  }
+
+  @keyframes move-rtl {
+    0%{
+        transform :translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+  }
