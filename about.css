@@ -1,0 +1,158 @@
+body {
+    margin:0;
+    height:51vh;
+  }
+
+
+header{
+  justify-content: space-between;
+  background-color: #0098fd;
+  display: flex;
+  height: 17vh;
+  width:100%;
+  position:fixed;
+  z-index:1;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+.sosmed{
+  scale:200%;
+  transform:translateX(-6.8vh)translateY(1.7vh);
+  z-index: 1;
+}
+.footer{
+  transform:translateY(357vh);
+  background-color: #0089e4;
+  line-height:0.5;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family: varela round;
+  color:#fff;
+}
+
+.gbrlogo{
+  transform:translateX(-13.6vh);
+}
+
+nav a {
+  float: left;
+    text-align: center;
+    padding: 4.25vh 1.7vh;
+  text-decoration: none;
+  font-size: 25px;
+  display: flex;
+  color: white;
+  font-family:'varela round';
+}
+nav a:hover {
+  background-color: rgb(93, 192, 238);transition:0.5s;scale:105%;border-radius:40px;
+}
+
+
+.main {
+  transform:translateY(-82.5vh);
+  background-image:url("awanbg.jpg");
+  background-size: 100%;
+  transition:0.5s;
+  height:70%;
+  background-position-y: -100px;
+}
+
+.about{
+  font-size:90px;
+  transform:translateY(1.7vh)translateX(17vh);
+  transition:0.5s;
+  padding:5.1vh 0 17vh 25.5vh;
+}
+
+.paragraph{
+  transform:translateY(-74.8vh)translateX(23.8vh);
+  line-height:0.5;
+  transition:0.2s;
+  opacity:0;
+
+}
+
+.main:hover .girl{
+  transform:translateY(5.1vh);
+}
+.main:hover .about{
+  font-size:40px;
+  transform:translateY(-3.4vh);
+}
+
+.main:hover{
+  height:100%;
+}
+
+.main:hover .paragraph{
+  transform:translateY(-20.4vh)translateX(30.6vh); 
+  opacity:1;
+}
+
+.logo1{
+  height:10.2vh;
+  color: white; 
+  font-family:rubik bubbles;
+  line-height:0;
+  transform:translateY(-3.4vh);
+}
+
+.logo2{
+  color: white; 
+  font-family:rubik bubbles;
+  font-style:bold;
+  transform:translateY(-25.5vh);
+}
+
+.girl{
+  transform:translateX(365.5vh)translateY(-375.8vh);
+  scale:45%;
+}
+.container{
+  position:relative;
+  width:100%;
+  height : 100vh;
+  overflow:hidden;
+
+}
+.bubbles{
+  position :relative;
+  display:flex;
+
+}
+.bubbles span{
+  position:relative;
+  width : 30px;
+  height:30px;
+  background-color:rgb(178, 227, 255);
+  margin:0 4px;
+  border-radius:50%;
+  box-shadow:0 0 50px #d3f3ff, 0 0 100px #e1fd95 ;
+  animation:animation 15s linear infinite;
+  animation-duration:calc(130s/var(--i));
+
+}
+
+@keyframes move-rtl {
+  0%{
+      transform :translateX(0);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
+
+
+
+@keyframes slidein {
+  from{
+      margin-left:100%;
+  }
+  to{
+      margin-left:0%;
+  }
+}
