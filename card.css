@@ -1,0 +1,344 @@
+body {
+  margin:0;
+  background-image:url("wave.jpg");
+  height:150%;
+  background-position-y:68vh;
+  background-repeat:repeat-x;
+  animation: animatee 5s linear infinite;
+  z-index:1000;
+  animation-delay:0s;
+  background-size:150%;
+}
+header{
+  justify-content: space-between;
+  background-color: #0098fd;
+  display: flex;
+  height:17vh;
+  position:fixed;
+  z-index:1;
+  width:100%;
+
+}
+
+.footer{
+  transform:translateY(340vh);
+  background-color: #0089e4;
+  line-height:0.5;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family: varela round;
+  color:#fff;
+}
+.sosmed{
+  scale:200%;
+  transform:translateX(-6.8vh)translateY(1.7vh);
+}
+
+.gbrlogo{
+  transform:translateX(-8.5vh); z-index:1;
+}
+
+nav a {
+  float: left;
+    text-align: center;
+    padding: 4.25vh 1.7vh;
+  text-decoration: none;
+  font-size: 25px;
+  display: flex;
+  color: white;
+  font-family:'varela round';
+}
+nav a:hover {
+  background-color: rgb(93, 192, 238);transition:0.5s;scale:105%;border-radius:40px;
+}
+
+
+.logo1{
+  height:10.2vh;
+  color: white; 
+  font-family:rubik bubbles;
+  line-height:0;
+  transform:translateY(-3.4vh);
+}
+
+.logo2{
+  color: white; 
+  font-family:rubik bubbles;
+  font-style:bold;
+  transform:translateY(-25.5vh);
+}
+
+.text{
+  font-family:rubik bubbles;
+  color:#fff;
+  font-size:100px;
+  padding-right:1.7vh;
+  padding-left:68vh;
+  padding-top:6.8vh;
+  padding-bottom:1.7vh;
+  scale:100%;
+  transition:0.6s;
+  transform:translateY(-5.1vh);
+  background-image:url("cloud2.jpg" );
+  background-size:100%;
+
+}
+
+.text:hover{
+  font-size:120px;
+  transform:translateX(-3.4vh)translateY(-1.7vh);
+  transition:0.6s;
+}
+
+.code{
+  transform:translateY(-297.5vh)translateX(96.9vh);
+  font-family:rubik bubbles;
+  color:white;
+  background-color:#27a4f7;
+  font-size: 30px;
+  border-radius:10px;
+  border-style:double;
+  border-color:white;
+}
+
+.code:hover{
+  transition:0.5s;
+  background-color: #0668aa;
+}
+
+
+/* Dari sini utk card btw biar ga pusing*/
+
+
+
+*,::before, ::after{
+box-sizing:border-box;
+}
+
+.produk{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+a{
+text-decoration:none;
+}
+
+
+.container{
+transform:translateY(-40px);
+width:70vh;
+padding-bottom:50px;
+justify-content: center;
+align-content:center;
+display:flex;
+height:200%;
+}
+
+.card{
+width:320px;
+height:500px;
+background-color:#098ae0;
+border-width: 10px;
+border-color: #fff;
+border-style:dashed;
+border-radius: 150px;
+padding-left: 50px;
+padding-right:50px;
+color:rgb(143, 199, 248);
+transform:translateY(150px);
+transition:0.5s;
+
+
+}
+
+.imgg{
+position:absolute;
+width: 260px;
+filter:drop-shadow(5px 10px 15px rgb(38, 52, 110));
+transform:translateY(-5.5rem)translateX(3rem);
+overflow:visible;
+max-width:100%;
+height:auto;
+transition:0.6s;
+}
+
+.imgg2{
+  position:absolute;
+  width: 260px;
+  filter:drop-shadow(5px 10px 15px rgb(38, 52, 110));
+  transform:translateY(-1.5rem)translateX(3rem);
+  overflow:visible;
+  scale:150%;
+  transition:0.6s;
+  }
+
+  .imgg3{
+    position:absolute;
+    width: 260px;
+    filter:drop-shadow(5px 10px 15px rgb(38, 52, 110));
+    transform:translateY(-1.5rem)translateX(3rem);
+    overflow:visible;
+    transition:0.6s;
+    }
+
+.data{
+transform:translateY(15.7rem);
+text-align:center;
+transition:0.6s;
+}
+
+.judul{
+font-size:35px;
+color:#ffffff;
+margin-bottom:.5rem;
+transition:0.6s;
+font-family:bungee;
+
+}
+
+.mahal{
+display:inline-block;
+font-size:25;
+font-weight:500;
+margin-bottom:1.25rem;
+transition:0.6s;
+color:#def7ff;
+font-family:bungee;
+}
+
+.desk {
+font-size:15px;
+text-align:inital;
+margin-bottom:1.2rem;
+opacity:0;
+font-family:varela round;
+transition:0.6s;
+color:#def7ff;
+}
+
+.button{
+display: block;
+width:max-content;
+padding-left:50px;
+padding-right:50px;
+background-color:#1091e7;
+color:aliceblue;
+border-radius:15px;
+transition: 0.2s;
+transform:translateX(13px);
+font-family:rubik bubbles;
+opacity:0;
+border-style:double;
+border-color:white;
+
+}
+
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+.card:hover .imgg{
+transform:translate(-1.5rem, -15rem) rotate(-20deg); 
+transition:0.5s;
+}
+
+.card:hover .imgg2{
+  transform:translate(-1.5rem, -8rem) rotate(-20deg); 
+  transition:0.5s;
+  }
+
+.card:hover .imgg3{
+  transform:translate(-1.5rem, -10rem) rotate(-20deg); 
+  transition:0.5s;
+  }
+
+.card:hover .data{
+transform:translateY(4.8rem);
+transition: 0.5s;
+}
+
+.card:hover .judul{
+transform:translateX(-2.3rem);
+margin-bottom:0;
+transition:0.5s;
+}
+
+
+.card:hover .mahal{
+transform:translateX(-6.8rem);
+margin-bottom:0;
+transition:0.5s;
+}
+
+.card:hover .desk, .card:hover .button{
+transition-delay: 0.2s;
+opacity:100%;
+}
+
+.button:hover{
+box-shadow:0 0 5px #031a4d;
+background-color: #1d59da;
+scale:110%;
+transition:0.5s;
+}
+
+.card:hover{
+  border-radius:50px;
+  transition:0.5s;
+}
+
+
+/* animasi*/
+
+.container2{
+position:relative;
+width:100%;
+height : 200%;
+transform:translateY(100px);
+overflow:hidden;
+}
+.bubbles{
+position :relative;
+display:flex;
+transform:translateY(800px);
+
+}
+.bubbles span{
+position:relative;
+width : 30px;
+height:30px;
+background-color:rgb(123, 226, 252);
+margin:0 4px;
+border-radius:50%;
+animation:animate 15s linear infinite;
+animation-duration:calc(130s/var(--i));
+z-index:2;
+
+}
+.bubbles span:nth :nth-child(even) {
+background-color:rgb(0, 132, 255);
+box-shadow:0 0 0 10px #34dffd, 0 0 50px #95adfd, 0 0 100px #95bffd ;
+}
+@keyframes animate{
+0%
+{
+    transform:translateY(100vh) scale(0);
+}
+100%
+{
+    transform:translateY(-10vh) scale(1);
+}
+}
+
+@keyframes animatee{
+  0%{
+    background-position-x:0;
+  }
+
+  100%{
+    background-position-x:1000px;
+  }
+}
